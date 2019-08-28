@@ -65,7 +65,7 @@ public class Add {
 		
 	   	}*/
 	
-	@When("User provide valid details")
+	/*@When("User provide valid details")
 	public void user_provide_valid_details(io.cucumber.datatable.DataTable cust) {
 		Map<String,String> onedmap = cust.asMap(String.class, String.class);
 		driver.findElement(By.xpath("//label[text()='Done']")).click();
@@ -76,7 +76,10 @@ public class Add {
 		driver.findElement(By.id("telephoneno")).sendKeys(onedmap.get("phoneno"));
 		driver.findElement(By.xpath("//input[@name='submit']")).click();
 		
-	}
+	}*/
+	
+	
+	
 	
 	@Then("To verify the customer id is dispayed")
 	public void to_verify_the_customer_id_is_dispayed() {
