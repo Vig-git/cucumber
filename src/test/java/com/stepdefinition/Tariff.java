@@ -31,8 +31,8 @@ public void user_click_add_tariff_plans() {
 
 
 
-/*@When("User provide the valid details")
-public void user_provide_the_valid_details(io.cucumber.datatable.DataTable dataTable) {
+@When("User provide the valid detail")
+public void user_provide_the_valid_detail(io.cucumber.datatable.DataTable dataTable) {
 	List<List<String>> twodlist = dataTable.asLists(String.class);
 	System.out.println(twodlist);
 	driver.findElement(By.xpath("//input[@name='rental']")).sendKeys("111");
@@ -44,7 +44,7 @@ public void user_provide_the_valid_details(io.cucumber.datatable.DataTable dataT
 	driver.findElement(By.id("sms_charges")).sendKeys(twodlist.get(2).get(5));
 	driver.findElement(By.xpath("//input[@name='submit']")).click();
 
-   }*/
+   }
 	
 	
 
@@ -52,7 +52,7 @@ public void user_provide_the_valid_details(io.cucumber.datatable.DataTable dataT
 public void user_provide_the_valid_details(io.cucumber.datatable.DataTable dataTable) {
    List<Map<String,String>> twodmap = dataTable.asMaps(String.class,String.class);
    System.out.println(twodmap);
-   driver.findElement(By.xpath("//input[@name='rental']")).sendKeys("mrent");
+   driver.findElement(By.xpath("//input[@name='rental']")).sendKeys(twodmap.get(0).get("mrent"));
 	driver.findElement(By.id("local_minutes")).sendKeys(twodmap.get(0).get("freelm"));
 	driver.findElement(By.id("inter_minutes")).sendKeys(twodmap.get(0).get("freeim"));
 	driver.findElement(By.id("sms_pack")).sendKeys(twodmap.get(1).get("sms"));

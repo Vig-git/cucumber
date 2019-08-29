@@ -5,7 +5,7 @@ Feature: Add Customer
   Scenario Outline: Generate the customer id
     Given User should launch browser
     And User click add customer link
-    When User provide valid details"<fname>","<lname>","<email>","<address>","<phone>"
+    When User provide valid detail"<fname>","<lname>","<email>","<address>","<phone>"
     Then To verify the customer id is dispayed
 
     Examples: 

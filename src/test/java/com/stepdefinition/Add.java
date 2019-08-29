@@ -28,7 +28,7 @@ public class Add {
 		driver.manage().window().maximize();
 	}
 
-	/*@When("User provide valid details")
+	@When("User provide valid details")
 	public void user_provide_valid_details() {
 		driver.findElement(By.xpath("//label[text()='Done']")).click();
 		driver.findElement(By.id("fname")).sendKeys("vignesh");
@@ -37,10 +37,10 @@ public class Add {
 		driver.findElement(By.xpath("//textarea[@name='addr']")).sendKeys("chennai");
 		driver.findElement(By.id("telephoneno")).sendKeys("12234444");
 		driver.findElement(By.xpath("//input[@name='submit']")).click();
-	}*/
+	}
 	
-	/*@When("User provide valid details{string},{string},{string},{string},{string}")
-	public void user_provide_valid_details(String fname, String lname, String email, String address, String phone) {
+	@When("User provide valid detail{string},{string},{string},{string},{string}")
+	public void user_provide_valid_detail(String fname, String lname, String email, String address, String phone) {
 		driver.findElement(By.xpath("//label[text()='Done']")).click();
 		driver.findElement(By.id("fname")).sendKeys(fname);
 		driver.findElement(By.id("lname")).sendKeys(lname);
@@ -49,10 +49,10 @@ public class Add {
 		driver.findElement(By.id("telephoneno")).sendKeys(phone);
 		driver.findElement(By.xpath("//input[@name='submit']")).click();
 	   
-	}*/
+	}
 
-	/*@When("User provide valid details")
-	public void user_provide_valid_details(io.cucumber.datatable.DataTable dataTable) {
+	@When("User provide valid deta")
+	public void user_provide_valid_deta(io.cucumber.datatable.DataTable dataTable) {
 		List<String> oned = dataTable.asList(String.class);
 		driver.findElement(By.xpath("//label[text()='Done']")).click();
 		driver.findElement(By.id("fname")).sendKeys(oned.get(0));
@@ -63,10 +63,10 @@ public class Add {
 		driver.findElement(By.xpath("//input[@name='submit']")).click();
 
 		
-	   	}*/
+	   	}
 	
-	/*@When("User provide valid details")
-	public void user_provide_valid_details(io.cucumber.datatable.DataTable cust) {
+	@When("User provide valid det")
+	public void user_provide_valid_det(io.cucumber.datatable.DataTable cust) {
 		Map<String,String> onedmap = cust.asMap(String.class, String.class);
 		driver.findElement(By.xpath("//label[text()='Done']")).click();
 		driver.findElement(By.id("fname")).sendKeys(onedmap.get("fname"));
@@ -76,7 +76,7 @@ public class Add {
 		driver.findElement(By.id("telephoneno")).sendKeys(onedmap.get("phoneno"));
 		driver.findElement(By.xpath("//input[@name='submit']")).click();
 		
-	}*/
+	}
 	
 	
 	

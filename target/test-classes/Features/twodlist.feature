@@ -5,7 +5,7 @@ Feature: Add Tariff plan
   Scenario: Generate the Tariff plans
     Given User should launch the browser
     And User click add tariff plans
-    When User provide the valid details
+    When User provide the valid detail
       | 111 | 222 | 333 | 444 | 555 | 666 | 777 |
       | 123 | 234 | 345 | 567 | 789 | 901 | 122 |
       | 101 | 202 | 303 | 404 | 505 | 606 | 707 |

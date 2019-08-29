@@ -5,7 +5,7 @@ Feature: Add Customer
   Scenario: Generate the customer id
     Given User should launch browser
     And User click add customer link
-    When User provide valid details
+    When User provide valid det
       | fname   | vignesh         |
       | lname   | raj             |
       | email   | vicky@gmail.com |

@@ -5,7 +5,7 @@ Feature: Add Customer
   Scenario: Generate the customer id
     Given User should launch browser
     And User click add customer link
-    When User provide valid details
+    When User provide valid deta
       | vignesh | raj | vicky@gmail.com | chennai | 212414 |
       
     Then To verify the customer id is dispayed
