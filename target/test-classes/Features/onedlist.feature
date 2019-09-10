@@ -1,4 +1,4 @@
-Feature: Add Customer
+Feature: Add Customer onedist
   I want to use the template for my feature file
 
   @tag1

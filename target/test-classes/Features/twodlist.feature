@@ -1,4 +1,4 @@
-Feature: Add Tariff plan
+Feature: Add Tariff plan twodlist
   I want to use the template for my feature file
 
   @tag1

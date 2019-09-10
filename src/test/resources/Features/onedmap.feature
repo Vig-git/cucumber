@@ -1,7 +1,7 @@
-Feature: Add Customer
+Feature: Add Customer onedmap
   I want to use the template for my feature file
 
-  @tag1
+  @tag1 @tag2
   Scenario: Generate the customer id
     Given User should launch browser
     And User click add customer link

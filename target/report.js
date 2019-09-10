@@ -14,6 +14,9 @@ formatter.scenario({
     }
   ]
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "User should launch browser",
   "keyword": "Given "
@@ -54,9 +57,12 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.uri("src/test/resources/Features/onedlist.feature");
 formatter.feature({
-  "name": "Add Customer",
+  "name": "Add Customer onedist",
   "description": "  I want to use the template for my feature file",
   "keyword": "Feature"
 });
@@ -69,6 +75,9 @@ formatter.scenario({
       "name": "@tag1"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should launch browser",
@@ -121,9 +130,12 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.uri("src/test/resources/Features/onedmap.feature");
 formatter.feature({
-  "name": "Add Customer",
+  "name": "Add Customer onedmap",
   "description": "  I want to use the template for my feature file",
   "keyword": "Feature"
 });
@@ -134,8 +146,14 @@ formatter.scenario({
   "tags": [
     {
       "name": "@tag1"
+    },
+    {
+      "name": "@tag2"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should launch browser",
@@ -209,9 +227,12 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.uri("src/test/resources/Features/outline.feature");
 formatter.feature({
-  "name": "Add Customer",
+  "name": "Add Customer outline",
   "description": "  I want to use the template for my feature file",
   "keyword": "Feature"
 });
@@ -221,7 +242,7 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@tag1"
+      "name": "@tag2"
     }
   ]
 });
@@ -290,9 +311,12 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@tag1"
+      "name": "@tag2"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should launch browser",
@@ -334,15 +358,21 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "Generate the customer id",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@tag1"
+      "name": "@tag2"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should launch browser",
@@ -384,15 +414,21 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "Generate the customer id",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@tag1"
+      "name": "@tag2"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should launch browser",
@@ -434,9 +470,12 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.uri("src/test/resources/Features/twodlist.feature");
 formatter.feature({
-  "name": "Add Tariff plan",
+  "name": "Add Tariff plan twodlist",
   "description": "  I want to use the template for my feature file",
   "keyword": "Feature"
 });
@@ -449,6 +488,9 @@ formatter.scenario({
       "name": "@tag1"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should launch the browser",
@@ -525,9 +567,12 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.uri("src/test/resources/Features/twodmap.feature");
 formatter.feature({
-  "name": "Add Tariff plan",
+  "name": "Add Tariff plan twodmap",
   "description": "  I want to use the template for my feature file",
   "keyword": "Feature"
 });
@@ -540,6 +585,9 @@ formatter.scenario({
       "name": "@tag1"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should launch the browser",
@@ -614,6 +662,9 @@ formatter.match({
   "location": "Tariff.to_verify_the_text_is_dispayed()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 });

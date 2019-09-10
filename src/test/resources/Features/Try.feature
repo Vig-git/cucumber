@@ -1,5 +1,5 @@
 
-Feature: Add Customer
+Feature: Add Customer 
   I want to use the template for my feature file
 
   @tag1
